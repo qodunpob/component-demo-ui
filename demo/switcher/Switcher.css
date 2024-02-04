@@ -1,0 +1,61 @@
+.switcher {
+  position: relative;
+  display: inline-flex;
+  padding: 0 25px;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  transition: background 0s 0.5s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.switcher::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: #fff;
+  transition:
+    left linear 1s,
+    background 0s 1s;
+}
+
+.switcher--on {
+  background: #fff;
+}
+
+.switcher--on::before {
+  left: -100%;
+  background: #1f1f1f;
+}
+
+.switcher_input {
+  display: none;
+}
+
+.switcher_label {
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.switcher_label--on {
+  color: #1f1f1f;
+}
+
+.switcher_label--off {
+  color: #fff;
+}

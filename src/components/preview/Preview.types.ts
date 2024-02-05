@@ -1,3 +1,3 @@
 export interface PreviewRef {
-  log: (data: any) => void
+  inspect: (data: any) => void
 }

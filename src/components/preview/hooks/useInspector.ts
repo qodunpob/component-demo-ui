@@ -11,7 +11,7 @@ export const useInspector = (
   const [data, setData] = useState<any>()
 
   useImperativeHandle(ref, () => ({
-    log: (data) => {
+    inspect: (data) => {
       setData(data)
     }
   }))

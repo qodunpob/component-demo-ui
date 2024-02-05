@@ -8,7 +8,7 @@ import { type ControlDefinition } from '../src/components/preview/components'
 export const App: React.FC = () => {
   const previewRef = useRef<PreviewRef>(null)
   const handleSwitcherChange = useCallback(
-    (isChecked: boolean) => previewRef.current?.log({ isChecked }),
+    (isChecked: boolean) => previewRef.current?.inspect({ isChecked }),
     []
   )
 

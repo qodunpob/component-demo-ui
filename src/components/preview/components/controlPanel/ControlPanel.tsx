@@ -12,7 +12,7 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
   controls,
   onChange
 }) => (
-  <form className='component-demo-ui-control-panel'>
+  <div className='component-demo-ui-control-panel'>
     <h3 className='component-demo-ui-control-panel-title'>Controls</h3>
     {controls.map((control) => (
       <Fragment key={control.name}>
@@ -24,5 +24,5 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
         </div>
       </Fragment>
     ))}
-  </form>
+  </div>
 )

@@ -23,3 +23,5 @@ rules:
         - TSUnionType
         - TSTypeParameterInstantiation
         - TSIntersectionType
+  "react/prop-types":
+    - off

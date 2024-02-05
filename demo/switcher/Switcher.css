@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background: #1f1f1f;
-  transition: background 0s 0.5s;
+  transition: background 0s 0.25s;
   user-select: none;
   cursor: pointer;
 }
@@ -27,8 +27,8 @@
   border-radius: 25px;
   background: #fff;
   transition:
-    left linear 1s,
-    background 0s 1s;
+    left linear 0.5s,
+    background 0s 0.5s;
 }
 
 .switcher:has(.switcher_input:checked) {

@@ -31,11 +31,11 @@
     background 0s 1s;
 }
 
-.switcher--on {
+.switcher:has(.switcher_input:checked) {
   background: #fff;
 }
 
-.switcher--on::before {
+.switcher:has(.switcher_input:checked)::before {
   left: -100%;
   background: #1f1f1f;
 }

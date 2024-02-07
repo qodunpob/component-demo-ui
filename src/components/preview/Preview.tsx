@@ -4,8 +4,10 @@ import { type ControlDefinition, ControlPanel, Inspector } from './components'
 import { type PreviewRef } from './Preview.types'
 import { useControlPanel, useInspector } from './hooks'
 import { isNotEmptyArray, isNotEmptyString } from '../../utils/common.utils'
+import cn from 'classnames'
 
 export interface PreviewProps {
+  className?: string
   title: string
   children: ReactElement
   caption?: string
@@ -17,12 +19,14 @@ export interface PreviewProps {
 export const Preview = forwardRef<PreviewRef, PreviewProps>(
   (
     {
+      className,
       title,
       caption,
       controls,
       showInspector = false,
       inspectorTitle,
-      children
+      children,
+      ...restProps
     },
     ref
   ) => {
@@ -32,7 +36,14 @@ export const Preview = forwardRef<PreviewRef, PreviewProps>(
     })
     const { data } = useInspector(ref)
     return (
-      <div className='component-demo-ui-container component-demo-ui-preview'>
+      <div
+        className={cn(
+          className,
+          'component-demo-ui-container',
+          'component-demo-ui-preview'
+        )}
+        {...restProps}
+      >
         <h1 className='component-demo-ui-title'>{title}</h1>
         {isNotEmptyString(caption) && (
           <p className='component-demo-ui-caption'>{caption}</p>

@@ -1,9 +1,16 @@
 import React, { useCallback, useRef } from 'react'
-import { GitHubLink, Preview, type PreviewRef } from '../src'
+import {
+  type ControlDefinition,
+  GitHubLink,
+  Preview,
+  type PreviewRef,
+  type PropDescription,
+  PropList,
+  Section
+} from '../src'
 import { Switcher } from './switcher/Switcher'
 import '../src/assets/styles/styles.css'
 import './assets/demo.css'
-import { type ControlDefinition } from '../src/components/preview/components'
 
 export const App: React.FC = () => {
   const previewRef = useRef<PreviewRef>(null)
@@ -25,6 +32,9 @@ export const App: React.FC = () => {
       >
         <Switcher onChange={handleSwitcherChange} />
       </Preview>
+      <Section title='Props'>
+        <PropList items={switcherProps} />
+      </Section>
     </div>
   )
 }
@@ -32,4 +42,24 @@ export const App: React.FC = () => {
 const switcherControls: ControlDefinition[] = [
   { name: 'labelOn', type: 'text', initialValue: 'On' },
   { name: 'labelOff', type: 'text', initialValue: 'Off' }
+]
+
+const switcherProps: PropDescription[] = [
+  { propName: 'labelOn', description: 'label for the "on" state' },
+  { propName: 'labelOff', description: 'label for the "off" state' },
+  {
+    propName: 'defaultChecked',
+    description: 'Indicator for setting the default switcher state'
+  },
+  {
+    propName: 'onChange',
+    description: (
+      <>
+        Callback for state change event. Takes the state indicator as a
+        parameter
+        <br />
+        <code>{'onChange: (isChecked: boolean) => void'}</code>
+      </>
+    )
+  }
 ]

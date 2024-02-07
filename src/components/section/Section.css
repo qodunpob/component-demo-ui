@@ -1,0 +1,9 @@
+.component-demo-ui-section {
+  margin-top: 2em;
+}
+
+.component-demo-ui-section-title {
+  padding-bottom: 0.625em;
+  font-weight: normal;
+  border-bottom: 1px solid var(--component-demo-ui-border-color, #ccc);
+}

@@ -1,0 +1,14 @@
+.component-demo-ui-prop-list {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1em;
+}
+
+.component-demo-ui-prop-list-name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.component-demo-ui-prop-list-description {
+  margin: 0;
+}

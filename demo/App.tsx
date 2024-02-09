@@ -35,6 +35,9 @@ export const App: React.FC = () => {
       <Section title='Props'>
         <PropList items={switcherProps} />
       </Section>
+      <Section title='License'>
+        <p>MIT.</p>
+      </Section>
     </div>
   )
 }

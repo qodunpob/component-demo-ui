@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preview should change the state of the component using controls 1`] = `
+<div
+  data-testid="hello-world"
+>
+  Bonjour, Bob
+   
+  👋
+</div>
+`;
+
+exports[`Preview should change the state of the component using controls 2`] = `
+<div
+  data-testid="hello-world"
+>
+  こんにちは, David
+   
+</div>
+`;
+
+exports[`Preview should display a preview of the component 1`] = `
+<div
+  data-testid="hello-world"
+>
+  Hello, World
+   
+</div>
+`;
+
+exports[`Preview should display caption and description 1`] = `
+<body>
+  <div>
+    <div
+      class="component-demo-ui-container component-demo-ui-preview"
+      data-testid="component-demo-ui-preview"
+    >
+      <h1
+        class="component-demo-ui-preview-title"
+      >
+        Preview
+      </h1>
+      <p
+        class="component-demo-ui-preview-caption"
+      >
+        Caption
+      </p>
+      <div
+        data-testid="hello-world"
+      >
+        Hello, World
+         
+      </div>
+      <p
+        class="component-demo-ui-preview-description"
+      >
+        Description
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Preview should display controls 1`] = `
+<div
+  class="component-demo-ui-control-panel"
+  data-testid="component-demo-ui-controls"
+>
+  <h3
+    class="component-demo-ui-control-panel-title"
+  >
+    Controls
+  </h3>
+  <div
+    class="component-demo-ui-control-panel-label"
+  >
+    greeting
+  </div>
+  <div
+    class="component-demo-ui-control-panel-control"
+  >
+    <select
+      class="component-demo-ui-control component-demo-ui-select-control"
+      data-testid="component-demo-ui-control-greeting"
+      name="greeting"
+    >
+      <option
+        value="Hello"
+      >
+        Hello
+      </option>
+      <option
+        selected=""
+        value="Bonjour"
+      >
+        Bonjour
+      </option>
+      <option
+        value="こんにちは"
+      >
+        こんにちは
+      </option>
+    </select>
+  </div>
+  <div
+    class="component-demo-ui-control-panel-label"
+  >
+    name
+  </div>
+  <div
+    class="component-demo-ui-control-panel-control"
+  >
+    <input
+      class="component-demo-ui-control"
+      data-testid="component-demo-ui-control-name"
+      name="name"
+      value="Bob"
+    />
+  </div>
+  <div
+    class="component-demo-ui-control-panel-label"
+  >
+    hasEmoji
+  </div>
+  <div
+    class="component-demo-ui-control-panel-control"
+  >
+    <label
+      class="component-demo-ui-checkbox-control"
+      data-testid="component-demo-ui-control-hasEmoji"
+    >
+      <input
+        checked=""
+        class="component-demo-ui-checkbox-control-input"
+        name="hasEmoji"
+        type="checkbox"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Preview should display the inspector 1`] = `
+<div
+  class="component-demo-ui-inspector"
+  data-testid="component-demo-ui-inspector"
+>
+  <h3
+    class="component-demo-ui-inspector-title"
+  >
+    Inspector
+  </h3>
+  <ol
+    role="tree"
+    style="padding: 0px; margin: 0px; list-style-type: none;"
+  >
+    <li
+      aria-expanded="false"
+      role="treeitem"
+      style="color: black; background-color: white; line-height: 1.2; cursor: default; box-sizing: border-box; list-style: none; font-family: Menlo, monospace; font-size: 11px;"
+    >
+      <div>
+        <span
+          style="color: rgb(128, 128, 128);"
+        >
+          undefined
+        </span>
+      </div>
+      <ol
+        role="group"
+        style="margin: 0px; padding-left: 12px;"
+      />
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Preview should provide an interface to interact with the inspector 1`] = `
+<div
+  class="component-demo-ui-inspector"
+  data-testid="component-demo-ui-inspector"
+>
+  <h3
+    class="component-demo-ui-inspector-title"
+  >
+    Inspector
+  </h3>
+  <ol
+    role="tree"
+    style="padding: 0px; margin: 0px; list-style-type: none;"
+  >
+    <li
+      aria-expanded="false"
+      role="treeitem"
+      style="color: black; background-color: white; line-height: 1.2; cursor: default; box-sizing: border-box; list-style: none; font-family: Menlo, monospace; font-size: 11px;"
+    >
+      <div>
+        <span
+          style="color: rgb(110, 110, 110); display: inline-block; font-size: 12px; margin-right: 3px; user-select: none; transform: rotateZ(0deg);"
+        >
+          ▶
+        </span>
+        <span
+          style="font-style: italic;"
+        />
+        <span
+          style="font-style: italic;"
+        >
+          {
+          <span>
+            <span
+              style="color: rgb(136, 19, 145);"
+            >
+              hello
+            </span>
+            : 
+            <span
+              style="color: rgb(196, 26, 22);"
+            >
+              "
+              World
+              "
+            </span>
+          </span>
+          }
+        </span>
+      </div>
+      <ol
+        role="group"
+        style="margin: 0px; padding-left: 12px;"
+      />
+    </li>
+  </ol>
+</div>
+`;

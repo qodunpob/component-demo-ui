@@ -1,5 +1,5 @@
 import React, { type ChangeEventHandler, useCallback } from 'react'
-import { type SelectControlDefinition } from '../../ControlPanel.types'
+import { type SelectControlDefinition } from '../../../models/ControlDefinition'
 import cn from 'classnames'
 import { SelectControlOption } from './SelectControlOption'
 import './SelectControl.css'
@@ -25,8 +25,10 @@ export const SelectControl: React.FC<SelectControlProps> = ({
 
   return (
     <select
+      data-testid={`component-demo-ui-control-${control.name}`}
       name={control.name}
       className={cn(className, 'component-demo-ui-select-control')}
+      defaultValue={control.initialValue}
       onChange={handleChange}
     >
       {control.options.map((option, index) => (

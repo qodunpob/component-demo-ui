@@ -1,4 +1,4 @@
-import { type CheckboxControlDefinition } from '../../ControlPanel.types'
+import { type CheckboxControlDefinition } from '../../../models/ControlDefinition'
 import React, { type ChangeEventHandler, useCallback } from 'react'
 import './CheckboxControl.css'
 
@@ -20,7 +20,10 @@ export const CheckboxControl: React.FC<CheckboxControlProps> = ({
   )
 
   return (
-    <label className='component-demo-ui-checkbox-control'>
+    <label
+      data-testid={`component-demo-ui-control-${control.name}`}
+      className='component-demo-ui-checkbox-control'
+    >
       <input
         className='component-demo-ui-checkbox-control-input'
         name={control.name}

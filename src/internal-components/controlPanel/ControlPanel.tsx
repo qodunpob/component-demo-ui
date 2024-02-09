@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import { type ControlDefinition } from './ControlPanel.types'
+import { type ControlDefinition } from '~/models'
 import './ControlPanel.css'
-import { Control } from './controls'
+import { Control } from '../controls'
 
 export interface ControlPanelProps {
   controls: ControlDefinition[]
@@ -12,7 +12,10 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
   controls,
   onChange
 }) => (
-  <div className='component-demo-ui-control-panel'>
+  <div
+    data-testid='component-demo-ui-controls'
+    className='component-demo-ui-control-panel'
+  >
     <h3 className='component-demo-ui-control-panel-title'>Controls</h3>
     {controls.map((control) => (
       <Fragment key={control.name}>

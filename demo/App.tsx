@@ -26,6 +26,7 @@ export const App: React.FC = () => {
         ref={previewRef}
         title='Switcher Component'
         caption='Component for switching between two states'
+        description='Switcher is a pure component, which means it will only rerender when props or state are changed'
         controls={switcherControls}
         showInspector
         inspectorTitle='Please, click the switcher'
@@ -52,13 +53,13 @@ const switcherProps: PropDescription[] = [
   { propName: 'labelOff', description: 'label for the "off" state' },
   {
     propName: 'defaultChecked',
-    description: 'Indicator for setting the default switcher state'
+    description: 'indicator for setting the default switcher state'
   },
   {
     propName: 'onChange',
     description: (
       <>
-        Callback for state change event. Takes the state indicator as a
+        callback for state change event. Takes the state indicator as a
         parameter
         <br />
         <code>{'onChange: (isChecked: boolean) => void'}</code>

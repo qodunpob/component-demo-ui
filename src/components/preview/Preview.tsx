@@ -11,6 +11,7 @@ export interface PreviewProps {
   title: string
   children: ReactElement
   caption?: string
+  description?: string
   controls?: ControlDefinition[]
   showInspector?: boolean
   inspectorTitle?: string
@@ -22,6 +23,7 @@ export const Preview = forwardRef<PreviewRef, PreviewProps>(
       className,
       title,
       caption,
+      description,
       controls,
       showInspector = false,
       inspectorTitle,
@@ -44,15 +46,18 @@ export const Preview = forwardRef<PreviewRef, PreviewProps>(
         )}
         {...restProps}
       >
-        <h1 className='component-demo-ui-title'>{title}</h1>
+        <h1 className='component-demo-ui-preview-title'>{title}</h1>
         {isNotEmptyString(caption) && (
-          <p className='component-demo-ui-caption'>{caption}</p>
+          <p className='component-demo-ui-preview-caption'>{caption}</p>
         )}
         {component}
         {isNotEmptyArray(controls) && (
           <ControlPanel controls={controls} onChange={handleControlsChange} />
         )}
         {showInspector && <Inspector title={inspectorTitle} data={data} />}
+        {isNotEmptyString(description) && (
+          <p className='component-demo-ui-preview-description'>{description}</p>
+        )}
       </div>
     )
   }

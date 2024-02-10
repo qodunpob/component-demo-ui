@@ -38,7 +38,7 @@
   "author": "Konstantin Basharkevich <qodunpob@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qodunpob/component-demo-ui.git"
+    "url": "git+https://github.com/qodunpob/component-demo-ui.git"
   },
   "homepage": "https://github.com/qodunpob/component-demo-ui",
   "bugs": "https://github.com/qodunpob/component-demo-ui/issues",
@@ -83,5 +83,7 @@
   "dependencies": {
     "react-inspector": "^6.0.2"
   },
-  "private": false
+  "publishConfig": {
+    "access": "public"
+  }
 }

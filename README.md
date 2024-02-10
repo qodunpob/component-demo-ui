@@ -15,9 +15,6 @@ the demo folder, use the following command to run:
 npm start
 ```
 
-or via the link
-[React Giphy Select Component](https://qodunpob.github.io/examples/react-giphy-select/).
-
 ## Installation
 
 ```shell

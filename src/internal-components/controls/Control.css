@@ -1,0 +1,19 @@
+.component-demo-ui-control {
+  padding: 10px;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  background: #fefefe;
+  border: 1px solid var(--component-demo-ui-input-border-color, #00aaff);
+  border-radius: 10px;
+  transition: ease 0.25s;
+}
+
+.component-demo-ui-control:not(:focus):hover {
+  box-shadow: inset 0 0 5px -1px var(--component-demo-ui-input-border-color, #00aaff);
+}
+
+.component-demo-ui-control:focus {
+  border: 1px solid var(--component-demo-ui-input-focus-border-color, #ff00aa);
+  outline: none;
+}

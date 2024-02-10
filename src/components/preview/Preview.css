@@ -1,0 +1,21 @@
+.component-demo-ui-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.component-demo-ui-preview-title {
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.component-demo-ui-preview-caption {
+  margin: 0;
+}
+
+.component-demo-ui-preview-description {
+  margin: 0;
+  width: 100%;
+}

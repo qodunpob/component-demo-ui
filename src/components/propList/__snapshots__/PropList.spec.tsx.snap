@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropList should display provided props and their description 1`] = `
+<body>
+  <div>
+    <dl
+      class="component-demo-ui-prop-list"
+    >
+      <dt
+        class="component-demo-ui-prop-list-name"
+      >
+        firstProp
+      </dt>
+      <dd
+        class="component-demo-ui-prop-list-description"
+      >
+        description of the firstProp
+      </dd>
+      <dt
+        class="component-demo-ui-prop-list-name"
+      >
+        secondProp
+      </dt>
+      <dd
+        class="component-demo-ui-prop-list-description"
+      >
+        description of the 
+        <i>
+          secondProp
+        </i>
+      </dd>
+    </dl>
+  </div>
+</body>
+`;

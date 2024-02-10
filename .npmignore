@@ -1,0 +1,11 @@
+.husky
+.idea
+__mocks__
+demo
+src
+.eslintrc.yml
+.prettierrc.yml
+demo.build.ts
+jest.config.cjs
+tsconfig.build.json
+tsconfig.json

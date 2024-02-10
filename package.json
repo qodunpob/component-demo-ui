@@ -18,7 +18,7 @@
     "demo:open": "open-cli http://127.0.0.1:8000/",
     "start": "npm run demo:clean && concurrently \"npm run demo:run\" \"npm run demo:open\"",
     "prepare": "husky",
-    "prepublishOnly": "npm run lint:fix && npm run format && npm test && npm run lib:build"
+    "prepublishOnly": "npm run lint && npm test && npm run lib:build"
   },
   "lint-staged": {
     ".*{ts,tsx}": [

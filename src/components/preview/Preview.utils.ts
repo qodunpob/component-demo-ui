@@ -1,4 +1,4 @@
-import type { ControlDefinition } from './components'
+import { type ControlDefinition } from '~/models'
 
 export const mapControlsToState = (
   controls?: ControlDefinition[]

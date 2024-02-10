@@ -1,6 +1,6 @@
 import { cloneElement, type ReactElement, useCallback, useState } from 'react'
-import type { ControlDefinition } from '../components'
 import { mapControlsToState } from '../Preview.utils'
+import { type ControlDefinition } from '~/models'
 
 export interface UseControlPanelProps {
   children: ReactElement

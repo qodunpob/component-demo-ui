@@ -1,10 +1,11 @@
 import React, { forwardRef, type ReactElement } from 'react'
 import './Preview.css'
-import { type ControlDefinition, ControlPanel, Inspector } from './components'
+import { ControlPanel, Inspector } from '~/internal-components'
 import { type PreviewRef } from './Preview.types'
 import { useControlPanel, useInspector } from './hooks'
-import { isNotEmptyArray, isNotEmptyString } from '../../utils/common.utils'
+import { isNotEmptyArray, isNotEmptyString } from '~/utils'
 import cn from 'classnames'
+import { type ControlDefinition } from '~/models'
 
 export interface PreviewProps {
   className?: string
@@ -39,6 +40,7 @@ export const Preview = forwardRef<PreviewRef, PreviewProps>(
     const { data } = useInspector(ref)
     return (
       <div
+        data-testid='component-demo-ui-preview'
         className={cn(
           className,
           'component-demo-ui-container',

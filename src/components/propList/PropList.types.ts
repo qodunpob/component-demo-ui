@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
 
-export interface PropDescription {
+export interface PropDefinition {
   propName: string
   description: ReactNode
 }

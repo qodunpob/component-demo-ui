@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section should display the title and content of the section 1`] = `
+<body>
+  <div>
+    <div
+      class="component-demo-ui-container component-demo-ui-section"
+    >
+      <h2
+        class="component-demo-ui-section-title"
+      >
+        Section
+      </h2>
+      <p>
+        Here is the 
+        <b>
+          section content
+        </b>
+      </p>
+    </div>
+  </div>
+</body>
+`;

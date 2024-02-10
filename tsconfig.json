@@ -13,6 +13,9 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   }
 }

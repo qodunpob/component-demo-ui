@@ -1,4 +1,4 @@
-import { type SelectControlOptionDefinition } from '../../ControlPanel.types'
+import { type SelectControlOptionDefinition } from '../../../models/ControlDefinition'
 import React from 'react'
 
 export interface SelectControlOptionProps {

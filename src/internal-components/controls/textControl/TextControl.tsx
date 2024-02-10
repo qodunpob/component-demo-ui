@@ -1,4 +1,4 @@
-import { type TextControlDefinition } from '../../ControlPanel.types'
+import { type TextControlDefinition } from '~/models'
 import React, { type ChangeEventHandler, useCallback } from 'react'
 import cn from 'classnames'
 
@@ -23,6 +23,7 @@ export const TextControl: React.FC<TextControlProps> = ({
 
   return (
     <input
+      data-testid={`component-demo-ui-control-${control.name}`}
       className={cn(className)}
       name={control.name}
       defaultValue={control.initialValue}

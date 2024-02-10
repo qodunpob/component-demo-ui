@@ -8,5 +8,6 @@
     "importsNotUsedAsValues": "remove",
     "noEmit": false
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/**/*.spec.ts", "src/**/*.spec.tsx"]
 }

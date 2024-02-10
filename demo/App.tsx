@@ -4,7 +4,7 @@ import {
   GitHubLink,
   Preview,
   type PreviewRef,
-  type PropDescription,
+  type PropDefinition,
   PropList,
   Section
 } from '../src'
@@ -48,7 +48,7 @@ const switcherControls: ControlDefinition[] = [
   { name: 'labelOff', type: 'text', initialValue: 'Off' }
 ]
 
-const switcherProps: PropDescription[] = [
+const switcherProps: PropDefinition[] = [
   { propName: 'labelOn', description: 'label for the "on" state' },
   { propName: 'labelOff', description: 'label for the "off" state' },
   {

@@ -18,7 +18,7 @@ export interface SelectControlDefinition extends GenericControlDefinition {
 }
 
 export type SelectControlOptionDefinition =
-  | { label: string, value: any }
+  | { label: string; value: any }
   | string
   | number
 

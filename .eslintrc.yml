@@ -17,5 +17,12 @@ ignorePatterns:
 rules:
   '@typescript-eslint/indent':
     - off
+  '@typescript-eslint/member-delimiter-style':
+    - error
+    - multiline:
+        delimiter: 'none'
+      singleline:
+        delimiter: 'semi'
+        requireLast: false
   'react/prop-types':
     - off

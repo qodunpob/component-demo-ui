@@ -1,11 +1,11 @@
-import { type PropDescription } from './PropList.types'
+import { type PropDefinition } from './PropList.types'
 import React, { Fragment } from 'react'
 import cn from 'classnames'
 import './PropList.css'
 
 export interface PropListProps {
   className?: string
-  items: PropDescription[]
+  items: PropDefinition[]
 }
 
 export const PropList: React.FC<PropListProps> = ({ className, items }) => (

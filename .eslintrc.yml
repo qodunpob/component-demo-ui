@@ -15,13 +15,7 @@ ignorePatterns:
   - dist
   - demo/public/assets
 rules:
-  "@typescript-eslint/indent":
-    - error
-    - 2
-    - ignoredNodes:
-        - PropertyDefinition[decorators]
-        - TSUnionType
-        - TSTypeParameterInstantiation
-        - TSIntersectionType
-  "react/prop-types":
+  '@typescript-eslint/indent':
+    - off
+  'react/prop-types':
     - off

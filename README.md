@@ -58,16 +58,16 @@ so it requires specifying the title and passing the child element.
 
 ##### Props
 
-| Name               | Necessity  | Type                                                     | Description                                                                                                                                                                           |
-| ------------------ | ---------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **title**          | _required_ | `string`                                                 | H1 page title, probably the name of the component.                                                                                                                                    |
-| **children**       | _required_ | `ReactElement`                                           | Component itself.                                                                                                                                                                     |
-| **className**      | _optional_ | `string`                                                 | Custom css class.                                                                                                                                                                     |
-| **caption**        | _optional_ | `string`                                                 | Text block between title and component.                                                                                                                                               |
-| **description**    | _optional_ | `string`                                                 | Text block at the end of _Preview_ component (after _Inspector_).                                                                                                                     |
-| **controls**       | _optional_ | [`ControlDefinition[]`](src/models/ControlDefinition.ts) | Setting up controls that allow a visitor to change the value of a component's properties.<br/>There are 3 types of controls available:<br/>- _text_,<br/>- _checkbox_<br/>- _select_. |
-| **showInspector**  | _optional_ | `boolean`                                                | Inspector display indicator.                                                                                                                                                          |
-| **inspectorTitle** | _optional_ | `string`                                                 | Inspector window title (if it's displayed)                                                                                                                                            |
+| Name               | Necessity  | Type                                                     | Description                                                                                                                                                                         |
+| ------------------ | ---------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **title**          | _required_ | `string`                                                 | H1 page title, probably the name of the component                                                                                                                                   |
+| **children**       | _required_ | `ReactElement`                                           | Component itself                                                                                                                                                                    |
+| **className**      | _optional_ | `string`                                                 | Custom css class                                                                                                                                                                    |
+| **caption**        | _optional_ | `string`                                                 | Text block between title and component                                                                                                                                              |
+| **description**    | _optional_ | `string`                                                 | Text block at the end of _Preview_ component (after _Inspector_)                                                                                                                    |
+| **controls**       | _optional_ | [`ControlDefinition[]`](src/models/ControlDefinition.ts) | Setting up controls that allow a visitor to change the value of a component's properties.<br/>There are 3 types of controls available:<br/>- _text_<br/>- _checkbox_<br/>- _select_ |
+| **showInspector**  | _optional_ | `boolean`                                                | Inspector display indicator                                                                                                                                                         |
+| **inspectorTitle** | _optional_ | `string`                                                 | Inspector window title (if it's displayed)                                                                                                                                          |
 
 ##### Ref
 
@@ -95,7 +95,7 @@ oriented towards a light page background, you can always recolor it.
 | Name          | Necessity  | Type     | Description                                |
 | ------------- | ---------- | -------- | ------------------------------------------ |
 | **url**       | _required_ | `string` | Link to your component's GitHub repository |
-| **className** | _optional_ | `string` | Custom css class.                          |
+| **className** | _optional_ | `string` | Custom css class                           |
 
 #### Section
 
@@ -104,11 +104,11 @@ and any content.
 
 ##### Props
 
-| Name          | Necessity  | Type        | Description       |
-| ------------- | ---------- | ----------- | ----------------- |
-| **title**     | _required_ | `string`    | H2 section title  |
-| **children**  | _optional_ | `ReactNode` | Section content.  |
-| **className** | _optional_ | `string`    | Custom css class. |
+| Name          | Necessity  | Type        | Description      |
+| ------------- | ---------- | ----------- | ---------------- |
+| **title**     | _required_ | `string`    | H2 section title |
+| **children**  | _optional_ | `ReactNode` | Section content  |
+| **className** | _optional_ | `string`    | Custom css class |
 
 #### PropList
 
@@ -119,7 +119,7 @@ Represents props as a list of terms and their descriptions.
 | Name          | Necessity  | Type                                                            | Description             |
 | ------------- | ---------- | --------------------------------------------------------------- | ----------------------- |
 | **items**     | _required_ | [`PropDefinition[]`](src/components/propList/PropList.types.ts) | List of described props |
-| **className** | _optional_ | `string`                                                        | Custom css class.       |
+| **className** | _optional_ | `string`                                                        | Custom css class        |
 
 **Caution:** The _PropList_ component itself is not a section
 and does not have page container styles, so it should be placed

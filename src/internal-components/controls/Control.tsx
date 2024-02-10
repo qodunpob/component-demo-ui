@@ -1,5 +1,5 @@
 import React from 'react'
-import { type ControlDefinition } from '../../models/ControlDefinition'
+import { type ControlDefinition } from '~/models'
 import { TextControl } from './textControl'
 import './Control.css'
 import { CheckboxControl } from './checkboxControl'

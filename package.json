@@ -21,7 +21,7 @@
     "prepublishOnly": "npm run lint && npm test && npm run lib:build"
   },
   "lint-staged": {
-    ".*{ts,tsx}": [
+    "*.{ts,tsx}": [
       "eslint"
     ],
     "*.{ts,tsx,json,css,md}": [
